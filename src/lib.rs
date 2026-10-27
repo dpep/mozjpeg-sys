@@ -278,6 +278,8 @@ pub enum J_INT_PARAM {
     JINT_BASE_QUANT_TBL_IDX = 0x44492AB1,
     /// DC scan optimization mode
     JINT_DC_SCAN_OPT_MODE = 0x0BE7AD3C,
+    /// Threads for trellis quantization: 1 = none, 0 = one per CPU
+    JINT_TRELLIS_THREADS = 0x759C6A9D,
 }
 
 #[repr(C)]

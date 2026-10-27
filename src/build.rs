@@ -138,6 +138,9 @@ fn main() {
             #endif
         #endif
         #define FALLTHROUGH
+        #if !defined(_WIN32)
+            #define WITH_TRELLIS_THREADS 1
+        #endif
         #define PACKAGE_NAME "{PACKAGE_NAME}"
         #define VERSION "{VERSION}"
         "#,
